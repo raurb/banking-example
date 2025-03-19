@@ -1,0 +1,14 @@
+{
+    "name": "raurb/banking-example",
+    "autoload": {
+        "psr-4": {
+            "Raurb\\BankingExample\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rafał Urbański"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,21 @@
+name: 'banking-example'
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    platform: linux/arm64
+    container_name: 'banking-example'
+    restart: 'no'
+    tty: true
+    volumes:
+      - ../:/var/www
+      - exclude:/var/www/docker
+    environment:
+      - HOSTNAME=banking-example.local
+      - PHP_IDE_CONFIG=serverName=banking-example.local
+    ports:
+      - '80:80'
+
+volumes:
+  exclude:
