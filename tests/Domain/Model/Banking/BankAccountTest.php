@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use PHPUnit\Framework\TestCase;
 use Raurb\BankingExample\Domain\Model\Banking\BankAccount;
 use Raurb\BankingExample\Domain\ValueObject\Banking\Currency;
@@ -10,8 +12,7 @@ class BankAccountTest extends TestCase
 {
     /**
      * I should have written more precise Exceptions for better error handling, 
-     * but I had no more time for that...
-     * Also, I am aware that some tests are missing, but I am short on time
+     * also, I am aware that some tests are missing, but I am short on time...
      */
 
     private BankAccount $bankAccount;
