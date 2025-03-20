@@ -10,5 +10,10 @@
             "name": "Rafał Urbański"
         }
     ],
-    "require": {}
+    "require": {
+        "ramsey/uuid": "^4.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
 }
